@@ -6,7 +6,7 @@ pagetitle: Basics
 Players should be familiar with the following concepts to enjoy the game:
 
 - [Models](#models): A single miniature representing a threat.
-- [Die Roll](#die-roll): To resolve risk in a model's action, such as an attack.
+- [Die Roll](#die-roll): To resolve risk and potentially gain in power.
 - [Measures & Ranges](#measures-ranges): Gauge if a model is permitted to perform an action, or if a rule or effect may apply.
 - [Game Elements](#game-elements): Important pieces to clearly present the state of play.
 - [Battlefield](#battlefield): A flat area set aside for play, preferably with some terrain to place on it.
