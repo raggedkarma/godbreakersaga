@@ -1,0 +1,43 @@
+---
+layout: menupage.njk
+subnavlist:
+    -
+        title: Basics
+        path: rules
+        chapters:
+        - { tag: "models", title: "Models" }
+        - { tag: "die-roll", title: "Die Roll" }
+        - { tag: "measures-ranges", title: "Measures & Ranges" }
+        - { tag: "game-elements", title: "Game Elements" }
+        - { tag: "battlefield", title: "Battlefield" }
+    -
+        title: Gameplay
+        path: rules/gameplay.html
+        chapters:
+        - { tag: "rounds", title: "Rounds" }
+        - { tag: "actions", title: "Actions" }
+    -
+        title: Circles
+        path: rules/circles.html
+        chapters:
+        - { tag: "shard", title: "Shard" }
+        - { tag: "godbreakers", title: "Godbreakers" }
+        - { tag: "gaining-traits", title: "Gaining Traits" }
+        - { tag: "ascension", title: "Ascension" }
+    -
+        title: Traits
+        path: rules/traits.html
+        chapters:
+        - { tag: "copper", title: "Copper" }
+        - { tag: "iron", title: "Iron" }
+        - { tag: "mercury", title: "Mercury" }
+        - { tag: "gold", title: "Gold" }
+    -
+        title: Advanced Rules
+        path: rules/advanced.html
+        chapters:
+        - { tag: "special-actions", title: "Special Actions" }
+        - { tag: "terrain-levels", title: "Terrain Levels" }
+        
+---
+{{ content | safe }}

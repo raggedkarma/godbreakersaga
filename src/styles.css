@@ -1,0 +1,159 @@
+main {
+    margin-top: 1em;
+    padding-top: .5em;
+}
+
+header {
+    border-bottom: 1px solid #333;
+}
+
+.sticky-top {
+    top: 1em;
+}
+
+hr {
+    margin: 2em 0;
+}
+
+em {
+    color: #bbb;
+}
+
+blockquote {
+    background-color: #333;
+    padding: 1em;
+    border: 1px solid #666;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote p em {
+    color: #eee;
+}
+
+h1, h2, h3, body {
+    color: #eee;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2, h3 {
+    margin: .75em 0 0 0;
+}
+
+h4 {
+    margin: 0px;
+    color: #aaa;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.font-grenze, h3 {
+    font-family: 'Grenze Gotisch';
+}
+
+.font-staatliches, h2 {
+    font-family: 'Staatliches';
+}
+
+.font-vollkorn, h1 {
+    font-family: 'Vollkorn SC';
+}
+
+.site-title {
+    font-size: 2em;
+}
+
+a.nav-link:hover {
+    color: #fff !important;
+}
+
+table {
+    margin-bottom: 1em;
+}
+
+table thead {
+    background-color: #40798C;
+}
+
+table thead a {
+    color: #eee;
+}
+
+table thead a:hover {
+    color: #fff;
+}
+
+table th, table td {
+    padding: .5em 1em;
+    border-bottom: 1px solid #666;
+}
+
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+main a, .chapters a {
+    color: #e3655b;
+}
+
+main a:hover, .chapters a:hover {
+    color: #e3655b;
+}
+
+.sidebar-menu {
+    background-color: #333;
+    border-radius: .5em;
+}
+
+.sidebar-menu, .sidebar-menu ul {
+    padding: 0;
+}
+
+.sidebar-menu li {
+    list-style: none;
+}
+
+.sidebar-menu > li a {
+    display: block;
+    text-decoration: underline;
+    border-radius: .5em;
+}
+
+.sidebar-menu > li > a {
+    padding: .5em 1em;
+}
+
+.sidebar-menu > li > ul > li > a {
+    padding: .5em 1em;
+    color: #e3655b;
+    font-size: 0.9em;
+}
+
+.sidebar-menu > li a:hover {
+    background-color: #666;
+    border-radius: .5em;
+    color: #eee;
+}
+
+.sidebar-menu li.active {
+    background-color: #444;
+    border-radius: .5em;
+}
+
+.sidebar-menu > li > ul > li > a {
+    padding: .5em 2em;
+}
+
+.footer {
+    margin-top: 2em;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
