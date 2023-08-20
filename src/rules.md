@@ -87,7 +87,7 @@ Every time a godbreaker's roll result is the maximum for their current die, they
 
 _For example: The godbreaker Nexus (D8) has an attack result of 8. They immediately remove all damage and, after the engage action has been completed, they are now a D10 model._
 
-The model's new die value is used in all future games using the same circle, until it changes again, either by Triumph or:
+The model's new die value is used in all future games using the same circle until it changes again, either by Triumph or:
 
 #### Ascension
 If a D12 godbreaker ever gains a Triumph, they are buoyed by incredible divine power. Messengers feel the call to witness such glories, bursting forth in a great host. Though initially awestruck or lovesick, they swiftly turn cruel and they drag the godbreaker back to their realm. Players might imagine this scene is accompanied by the clear sound of trumpets, an epic guitar solo, or a lot of screaming.
