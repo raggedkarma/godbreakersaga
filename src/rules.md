@@ -22,7 +22,7 @@ A model may never be placed such that it overlaps another model (including its b
 - **Circle:** Five godbreaker models and a shard marker.
 - **Hostile & Friendly:** Game terms that are used to determine the eligibility of a target for certain rules.
 - **Unaligned:** Unaligned models are minor threats that may be allies or prove dangerous. Wild models act based on their current compulsion.
-- **Traits & Flaws:** Special rules that make a model behave uniquely on the table.
+- **Traits & Flaws:** Special rules that allow a model behave uniquely on the table.
 
 ### Die Value (D)
 All models use a die value, or **D**, as a numerical measure of its might, either: **6**, **8**, **10** or **12**. This value encapsulates their abilities, skills, gear, and overall experience.
