@@ -10,7 +10,7 @@ A collection of external resources, player downloads and reference lists.
 ## Downloads
 These are all freely available for personal use.
 
-- [Circle Roster](/resources/circle-roster.pdf): To record a circle and its progress, for two players.
+- <a href="/resources/circle-roster.pdf" target="_blank">Circle Roster</a>: To record a circle and its progress, for two players.
 
 <hr id="trait-reference" />
 
@@ -50,7 +50,7 @@ I'm always eager to hear how folk are enjoying the game, or if there's a rule th
 
 ### Inspiration
 I've been absolutely blown away by the amount of passion and creativity in the wargaming space, but especially:
-- [Planet Smasher Games](http://planetsmashergames.com/)
-- [Forbidden Psalm](https://www.forbiddenpsalm.com)
-- [Guerilla Miniature Games](https://www.youtube.com/@GuerrillaMiniatureGames)
-- [Snarling Badger Studios](https://www.snarlingbadger.com/)
+- <a href="http://planetsmashergames.com/" target="_blank">Planet Smasher Games</a>
+- <a href="https://www.forbiddenpsalm.com" target="_blank">Forbidden Psalm</a>
+- <a href="https://www.youtube.com/@GuerrillaMiniatureGames" target="_blank">Guerilla Miniature Games</a>
+- <a href="https://www.snarlingbadger.com/" target="_blank">Snarling Badger Studios</a>

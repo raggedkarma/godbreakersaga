@@ -1,0 +1,23 @@
+{
+    "short_name": "Godbreakers",
+    "name": "The Godbreaker Saga",
+    "icons": [
+      {
+        "src": "/resources/images/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/resources/images/icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "id": "/index.html",
+    "start_url": "/index.html",
+    "background_color": "#333741",
+    "display": "fullscreen",
+    "scope": "/",
+    "theme_color": "#333741",
+    "description": "An omnipotent skirmish wargame by Robin Uney"
+  }

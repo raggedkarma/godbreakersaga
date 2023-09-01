@@ -55,3 +55,11 @@ A scenario is a single encounter, and will detail how to setup models, introduce
 
 #### Rules
 Looks like all that is left is to read the [Rules](/rules)!
+
+<script>
+<!--
+if ('serviceWorker' in navigator) {
+   navigator.serviceWorker.register("/worker.js")
+}
+-->
+</script>
