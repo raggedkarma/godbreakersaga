@@ -1,7 +1,7 @@
 module.exports = cfg => {
     cfg.addPassthroughCopy("src/resources/images/*");
     cfg.addPassthroughCopy("src/resources/fonts/*");
-    cfg.addPassthroughCopy("src/resources/**/*");
+    cfg.addPassthroughCopy("src/resources/*.pdf");
     cfg.addPassthroughCopy("src/worker.js");
     cfg.addPassthroughCopy("src/manifest.json");
 
