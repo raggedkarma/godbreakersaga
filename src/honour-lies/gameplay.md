@@ -8,66 +8,87 @@ pagetitle: Gameplay
 <hr id="setup" />
 
 ## Setup
-Firstly, players place one or more terrain boards in the middle of the play area, then determine Initiative. Players then place their deployment boards aligned with each terain board, starting with the player without Initiative. Players then deploy their units, starting with the player without Initiave. Both players must first deploy a unit to occupy the command holding in their deployment area, then take it in turns to place units anywhere on their deployment board.
 
-For basic play, the youngest player has the Initiative.
+#### Build Forces
+To begin, both players must agree to maximum number of units armies may bring. Players then ready that many units, from any combination of role & type that fits their collection, and nominate one to be the General's unit.
+
+#### Battlefield & Initiative
+Players place terrain as determined by the scenario, then seize the Initiative. For basic play, the youngest player always seizes the Initiative. That's just what they're like.
+
+#### Deploy Units
+Players first deploy their General's unit to their command holding. Then, starting with the player without Initiative, players take turns to deploy remaining units anywhere within their deployment area.
 
 <hr id="rounds" />
 
 ## Rounds
-Each round, players take turns activating a unit, starting with the player with Initiative. Each unit may only be activated once per round. Instead of activating a unit, or if they have no more units to activate, a player may pass for the rest of the round and only their opponent may activate units. Once both players have passed, the round is over and a new round begins.
-
-> Disordered units cannot be activated.
+Every round, starting with the player with Initiative, players take turns to activate a unit. Each unit may only be activated once per round, and if there are no more units left to activate for either player the round is over and a new round begins.
 
 #### Conclusion
-Add 1VP to a player's tally for every destroyed enemy unit. At the end of the game, occupied command holdings are worth 5VP. The side with the highest VP total Is declared the winner.
+During play, add 1VP to a player's tally for every destroyed enemy unit. At the end of the game, occupied command holdings are worth 5VP. The side with the highest VP total is declared the winner.
 
 <hr id="activation" />
 
 ## Activation
-Units have the following activation flow, which is a list of potential actions that must be performed in order:
+Units have the following activation flow, which is a list of actions that must be performed (or skipped) in order:
 
-1. Ranged Combat
+1. Ranged Attack
 2. Reform
 3. Move
-4. Move (if not engaged or in difficult terrain)
-5. Close Combat
+4. March
+5. Melee
 
-Outside of special rules, a unit is not expected to perform any specific action, but must perform actions in the order provided. For example, a unit cannot shoot or reform after it has moved, unless specifically permitted. Once a unit is activated it becomes the 'active unit' until another unit is activated.
+Outside of special rules, a unit is not expected to perform any specific action, but must perform actions in the order provided. For example, a unit cannot shoot or reform after it has moved, unless specifically permitted. Once a unit is activated it becomes the 'active unit' until another unit is activated. A unit may be required to [rebuild the formation](/honour-lies/#formations) during a reform or move, so players should be familiar with this process.
 
-### Ranged Combat
-A unit with a ranged value may, at the start of its turn, engage a visible unit directly ahead of it in ranged [combat](#combat).
+### Ranged Attack
+A unit with a ranged value may, at the start of its turn, engage a visible unit directly ahead of it in [ranged combat](#combat). To determine facing, use the majority of the attacker's front facing to determine the facing of the defending unit.
 
 ### Reform
-The unit changes its formation from either regular to wall or column, or from wall or column to regular. Since a unit with two stands cannot be in the regular formation, it may reform directly from wall to column.
+The unit changes its formation from either regular to wall or column, or from wall or column to regular. A unit with two stands may reform directly from wall to column.
 
-To reform, select one of the central stands in the front rank from which to rebuild the new formation. During a reform, no stand may be placed in front of the current front rank.
+To reform, select one of the central stands in the front rank from which to rebuild the chosen formation. During a reform, no stand may be placed in front of the current front rank.
 
 ### Move
-Moving a unit requires repositioning one of its stands in alignment with the unit, then rebuilding the formation from the placed stand. If a unit is in difficult terrain, it may not may the second move in a turn. There are three ways a unit can move: _advance_, _retreat_, and _pivot_.
+Moving a unit requires repositioning one of its stands in alignment with the unit, then rebuilding the formation around the placed stand. There are three ways a unit can move: _Advance_, _Retreat_, and _Pivot_. If a Retreat or Pivot move ends with any stand in the active unit in contact with an enemy unit, or overlapping any unit, that stand is destroyed.
 
 > A unit with only a single stand remaining may not move, but may rotate on the spot up to 90 degrees.
 
 #### Advance
-Reposition a stand in the rear rank in front of the unit, with either corner touching and the other no more than 30mm forward. If a stand would be placed overlapping or touching an enemy stand during an Advance, the unit immediately engages it in close combat instead of being destroyed.
+Reposition a stand from the rear rank in front of the unit, with either corner in contact and the other no more than 30mm forward. If a stand would be placed overlapping or in contact with an enemy stand during an Advance, the unit immediately engages it in melee.
 
-When a unit engages an enemy, align a stand from the engaging unit with the enemy. From the engaging stand, rebuild the formation. An engaging unit may adopt another formation when rebuilding if the alternative is a stand overlapping an enemy.
+![advance move](/resources/images/honour-lies/advance-move.png)
+
+When a stand engages an enemy, align it to the enemy's facing that is directly ahead by majority. From the engaging stand, rebuild the formation, in contact with the enemy unit if possible. An engaging unit may adopt any other formation when rebuilding, but only to prevent making contact with another enemy unit, or causing overlap.
+
+![advance engage](/resources/images/honour-lies/advance-engage.png)
 
 #### Retreat
-Reposition a stand from the front rank behind the unit in alignment, then rebuild the formation.
+Reposition a stand from the front rank behind the unit, in alignment, then rebuild the formation.
+
+![retreat move](/resources/images/honour-lies/retreat-move.png)
+
+If a stand would be placed overlapping a friendly stand during a Retreat, the unit may flee through it. Place the stand in alignment with the opposite face of the friendly unit, facing toward it, then rebuild the formation. A unit cannot flee through multiple friendly units in the same turn.
+
+Finally, destroy a stand from the unit that has been fled through.
+
+![retreat through move](/resources/images/honour-lies/retreat-through-move.png)
 
 #### Pivot
-Reposition a stand from the front rank to either side of the unit in alignment, oriented to face away from the unit, then rebuild the formation. While rebuilding, no stand may be placed in front of the initially repositioned one.
+Reposition a stand from the rear rank to either side of the unit, in alignment and oriented to face toward the unit, then rebuild the formation.
 
-### Close Combat
-A unit that engaged an enemy unit must now fight a close [combat](#combat).
+![pivot move](/resources/images/honour-lies/pivot-move.png)
+
+### March
+A unit may not march if engaged or in difficult terrain. A march is an **Advance** or **Retreat** move, as detailed above.
+
+### Melee
+An engaged unit must now fight a [melee combat](#combat):
 
 <hr id="combat" />
 
 ## Combat
-All combats are fought in the following order:
+Both ranged and melee combats are fought in the following order:
 1. Calculate Base Combat Score
-2. Bid Health
+2. Health Bid
 3. Resolution
 
 ### Calculate Base Combat Score
@@ -77,40 +98,43 @@ The active unit is the attacker, and counts every stand in the front rank of the
 | :--------------------------------: | :--------------------------------: |
 | \[ + \]\[ + \]<br />\[ ^ \]\[ ^ \] | \[ + \]\[ ^ \]<br />\[ + \]\[ ^ \] |
 
-To calculate a unit's base combat score, or the `base attack` or `base defence` score, total the appropriate value for each counted stand:
+To calculate a unit's base combat score, total the appropriate value for each counted stand:
+- **Attacker:**
+    - **Ranged:** ranged
+    - **Melee:** melee
 - **Defender:** defence
-- **Close Combat Attacker:** attack
-- **Ranged Attacker:** ranged
 
 > For Example:
-> - Four stands (defence 4) defending in a regular formation, would have a base combat score of **8** (4+4).
-> - Three stands (attack 3) attacking in a wide formation, would have a base combat score of **9** (3+3+3).
-> - Two stands (attack 6) attacking in a column formation, would have a base combat score of **6**.
+> - Four stands (defence 4) defending in a regular formation, would count two stands for a base defence score of **8** (4+4).
+> - Three stands (melee 3) attacking in a wide formation, would count three stands for a base melee score of **9** (3+3+3).
+> - Two stands (ranged 6) attacking in a column formation, would count one stand for a base ranged score of **6**.
 
-## Flank & Rear
-A defender being attacked in the flank of the unit may only count a single stand for defence. A unit being attacked in the rear has a base defence score 0, regardless of the unit or its formation.
+#### Flank & Rear
+A defender being attacked in the flank may only count a single stand for defence. A unit being attacked in the rear has a base defence score 0, regardless of the unit or its formation, though terrain may still apply.
 
-## High Ground
-A unit increases its base close combat score by +1 for every stand on high ground, even those not counted. For example, if there are four stands (defence 4) all on high ground in regular formation, they would have a defence combat score of 12 (4+4+1+1+1+1). High ground does not increase combat score dring ranged combats, but ranged units on high ground can see over obscuring terrain.
+#### High Ground
+A unit increases its base melee score by +1 for every stand on high ground, even those not counted. For example, if there are four stands (melee 4) all on high ground in regular formation, they would have a melee score of 12 (4+4+1+1+1+1). High ground does not increase ranged or defence scores for either unit, but units on high ground can see over obscuring terrain.
 
-## Obscuring Terrain
-If defending against a ranged attack, units within obscuring terrain increase their base combat score by +1 for every stand in the terrain, even those not counted.
+#### Obscuring Terrain
+During a ranged combat, units within obscuring terrain increase their base defence score by +1 for every stand in obscuring terrain, even those not counted.
 
 ### Health Bid
-The formation and placement of each unit can greatly impact the odds of victory, with soldiers spending their lives to secure it.
+The formation and placement of each unit can greatly impact the odds of victory, but soldiers must give their lives to secure it.
 
-Units may now bid their remaining Health. A unit's combat score is improved by +1 for every Health bid. If the final combat scores should tie, both units lose a Health and a new bid is made. If a unit should lose its last Health this way, it is immediately destroyed.
-
-Units attacking at range are removed from harm, so cannot bid their Health.
+Both players now bid the remaining Health of their unit, improving its combat score by +1 per Health bid. Those attacking at range are usually safe from reprisals, so units making a ranged attack cannot bid their Health, unless they have [Reckless Volley](/honour-lies/army-builder#special-rules).
 
 #### Disorder
-Disordered units raise their combat score by only half the value of their bid (rounding down). For example, a disordered unit bidding 3 of its Health would improve their combat score by only +1.
+Disordered units bid at a 2:1 ratio in combat. For example, a disordered unit bidding two of its Health would improve their combat score by only +1.
 
 ### Resolution
-The side with the greater final combat score is victorious, with the difference being the **margin of victory**. The defeated unit, unless a ranged attacker, must check for lost cohesion and then make a retreat move.
+The side with the greater final combat score is victorious, with the difference being the **margin of victory**. The defeated unit, unless destroyed or a ranged attacker, must check for lost cohesion and then make a Retreat move.
 
-#### Lost Cohesion & Retreat
-Defeat causes even capable warriors to consider the terrible cost of holding fast. If the margin of victory is equal to or greater than the Morale value of the defeated unit, one stand from that unit is removed. These warriors have chosen dishonour over death.
+#### Tied Combat Score
+If the final opposing combat scores should tie, the player with the Initiative claims victory, with a margin of victory of 0.
 
-#### Tally Health
-Finally, each unit reduces their Health value by their bid. A unit that has no Health remaining is immediately destroyed.
+#### Lost Cohesion
+Defeat causes even capable warriors to consider the terrible cost of holding fast. If the margin of victory is equal to or greater than the Morale value of the defeated unit, one stand from that unit is removed.
+
+The defeated unit, if not destroyed, must now make a Retreat move.
+
+> It is important to note that Health is not lost through defeat. Indeed, it is the only path to victory, but you must decide which fight is worth dying for. A combat might even be won by making the ultimate sacrifice! The removal of stands represents the loss of good order, not casualities- the soldiers are still around, just fighting for themselves instead of each other.

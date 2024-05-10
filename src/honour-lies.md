@@ -7,52 +7,41 @@ pagetitle: Here Honour Lies
 
 Players should be familiar with the following concepts to enjoy the game:
 
-- [Units](#units): A single miniature representing a threat.
-- [Bidding](#bidding): Gauge if a model is permitted to perform an action, or if a rule or effect may apply.
-- [Disorder](#disorder): Important pieces to clearly present the state of play.
-- [Terrain](#terrain): To resolve risk and potentially gain in power.
+- [Units](#units): A group of stands operating as a block of troops.
+- [Formations](#formations): How units stands are arranged, which can change during play.
+- [Bidding](#bidding): The core mechanic to introduce uncertainty and allow soldiers to sell their lives dearly.
+- [Disorder](#disorder): Supply mechanics.
+- [Terrain](#terrain): Where you fight.
 
 <hr id="units" />
 
 ## Units
-A force is made up entirely of unit, which is created a combination of **type** and **role**. There are no requirements of what should be taken when building up your army, as long as both sides have the same number of units. A unit is made up of a number of stands depending on its type. All stands in a unit must have two corners in contact with another stand of its unit during play, referred to as _alignment_.
+An army is made up of units, which are made up of a number of stands depending on its type. There are no requirements of what should be taken when building up your army, as long as both sides have the same number of units. All stands in a unit must have two corners in contact with another stand of its unit during play, referred to as _alignment_.
+
+![alignment](/resources/images/honour-lies/alignment.png)
+_In the example above, the stands 1, 2 and 3 are in alignment, as they all share two corners in contact with one another. Stand 4 is not, as its corners are not aligned, even if it is in base contact with Stand 3._
 
 If aligning two stands with different orientation, only one corner must be in contact but otherwise the bases must be in full contact.
 
-### Facing
-All units have a front, two flank (or side), and one rear facing. The size of each which will change over the course of the game as the unit adopts different formations.
-
 ### Stands
-A stand is a single rectangular base measuring 60x30mm, filled with multiple miniatures that represent its role and type. A stand may never be placed such that it overlap other stands, friend or foe. Depending on the circumstances, a situation that would cause a stand to overlap another may trigger a combat or simply remove the overlapping stand.
+A stand is one or more miniatures on a single rectangular base measuring 60x30mm, filled with multiple miniatures that represent its role and type. A stand may never be placed such that it overlap other stands, friend or foe. Depending on the circumstances, a situation that would cause a stand to overlap another or even be in base contact may trigger a melee or simply remove the overlapping stand.
 
-As the game progresses, units will lose stands to enemy action. If the last stand in a unit is removed, the unit is destroyed. If a unit is destroyed, all its stands are removed.
+As the game progresses, units will lose stands to enemy action. Stands are always removed from the rear of the unit. If the last stand in a unit is removed, the unit is destroyed. If a unit is destroyed, all its stands are removed.
+
+### Facing
+All units have a front, two flanks (or sides), and a rear facing. The size of each which will change over the course of the game as the unit adopts different formations.
 
 ### Sight
 Several rules will require a unit to be able to see another. Units can 'see' in all directions, but may only direct attacks toward its forward facing. Terrain, holdings and enemy units block sight if there is no imaginary line that could be drawn that does not pass entirely through.
-
-### Formation
-All units must adopt one of the following formations during play: _wall_, _regular_, or _column_. When instructed to rebuild a formation, align the remaining stands until the unit is in its current formation. If the formation cannot be rebuilt due to friendly models, return the unit to its original position. While rebuilding a formation, unless otherwise specified, a stand that cannot be placed without overlapping an enemy stand is destroyed.
-
-As players play through a few games, the importance of switching between these formations will become readily apparent. Making sure your units are in the right formation at the right time is a necessary to achieve victory.
-
-> A unit that comprises of a single stand has no available formations.
-
-| | | |
-| --- | --- | --- |
-| **Wall**    | \[ ^ \]\[ ^ \]\[ ^ \]\[ ^ \] |
-| **Regular** | \[ ^ \]\[ ^ \]<br />\[ ^ \]\[ ^ \] |
-| **Column**  | \[ ^ \]<br />\[ ^ \]<br />\[ ^ \]<br />\[ ^ \] |
-
-When rebuilding a wall formation of more than two stands, the player must align a stand either side of the initial one. If a unit in regular formation has three stands, the second row has only one stand. If a unit should only have two stands, this formation is no longer available.
 
 ### Positioning
 When a unit is called to be deployed or repositioned, there are some requirements that all players must follow unless explicitly set aside in the specific rules for that circumstance.
 
 #### Deploy or Reposition
-When deploying or repositioning a unit, it cannot be touching or overlapping any other unit. A unit may be deployed or repositioned into an unoccupied holding, and immediately occupy it as long as it would not immediately be engaged. If a unit would be repositioned or deployed such that it would be disordered (see [Disorder](#disorder)), a stand is destroyed after rebuilding the formation.
+When deploying or repositioning a unit, it cannot be in base contact or overlapping any other unit. A unit may be deployed or repositioned into an unoccupied holding, and immediately occupy it as long as it would not immediately be engaged. If a unit would be repositioned or deployed such that it would be disordered (see [Disorder](#disorder)), a stand is destroyed after rebuilding the formation.
 
 ### Type
-Depending on its type, each stand has default value in Attack, Defence and Morale (see: [Army Builder](honour-lies/army-builder.html)). These will be modified by its **role**. All units are one of following four types: _beasts_, _behemoths_, _cavalry_ and _infantry_.
+All units must be one of four types: _beasts_, _behemoths_, _cavalry_ and _infantry_. A unit's type determines its orientation, and default values (see: [Army Builder](/honour-lies/army-builder.html#types)).
 
 #### Beasts
 Swarms of biting vermin driven before the main force, or perhaps great dogs raised from birth to hunt. They are pure havoc for any general to contend with.
@@ -67,20 +56,20 @@ Great creatures or engines of war that may well turn the tide of any engagement,
 #### Cavalry
 Capably trained soldiers granted the privilege of riding into battle. They are best used to harass and break enemy lines, and will suffer if caught out or knocked from their mounts. While some armies use them sparingly, others are entirely built on the backs of mobile warfare.
 
-> A unit of beasts consists of four stands, facing toward the shorter edge.
+> A unit of cavalry consists of four stands, facing toward the shorter edge.
 
 #### Infantry
 These are the backbone of any force, equipped with heavy armour and the best weapons, or pitchforks and fury.
 
-> A unit of beasts consists of four stands, facing toward the longest edge.
+> A unit of infantry consists of four stands, facing toward the longest edge.
 
 ### Role
-Every unit must select a role which combines with its type to define their particular capabilities on the field.  Certain roles may have fewer stands in a unit, to represent their rarity or poor fighting discipline. Every faction has its version of each combination, and players are encouraged to experiment for themselves.
+Every unit must select a role which builds from its type to define its particular capabilities on the field. Certain roles may have fewer stands in a unit, to represent their rarity or poor fighting discipline. Every faction could rationalise any combination, and players are encouraged to experiment for themselves.
 
-The selected role modifies the default values outlined above and the unit will gain special rules that alter how it moves or fights. Should the role provide a Ranged value, it is calculated from the Attack for its unit type.
+The selected role modifies the default values outlined above and the unit will gain special rules that alter how it moves or fights. Should the role provide a ranged modifier, it is calculated from the default attack for its type.
 
 #### Artillery
-Rain fire with units that can bring terrible forces to bear, from cunning sorcery or alchemy to even more dangerous combinations of the two. While their ranged attacks are tremendous, these units are incredibly ponderous and easily overrun.
+Rain fire with units that can bring terrible forces to bear, from cunning sorcery or alchemy to even more punishing combinations of the two. While their ranged attacks are tremendous, these units are incredibly ponderous and easily overrun.
 
 #### Berserker
 The epitome of crude violence, either warriors of barely restrained fury or creatures driven near mad with hunger. These will absolutely bring the fight to the enemy, but can't take it as well as they can dish it out.
@@ -95,23 +84,40 @@ Brutes who take the hits and keep on coming. These can hold the centre pretty we
 Peasants and mercenaries raised from common stock. There are always more that can be convinced to march, by coin or whip. These are completely disposable troops- better to throw them in to trouble than carefully shepherd them.
 
 #### Monstrous
-These mighty warriors swell with magics or speak to a potent genetic legacy. Spawn of old tragedies or terrible curses, and often the last of their kind. Not to be wasted on inefficient targets, make sure you chose their opponents.
+These mighty warriors swell with magics or speak to a potent genetic legacy. Spawn of old tragedies or terrible curses, and often the last of their kind. Not to be wasted on inefficient targets, so make sure to chose their opponents well.
+
+#### Nightmare
+Terrible things called by death. These may be forgotten spirits, shrieking wraiths or cruel fae. Should the nemy hold fast before them, such horrors may find their unreal forms little more resilient than shadow.
 
 #### Scout
 Those who move with the land and harass the enemy. Usually creatures or people of the wild, who do not fight for promised riches or glory, but to save their home and kin. Quick, but must choose their targets carefully. Find their flanks, and disrupt supply lines.
 
-> There may be circumstances that cause a unit to change its role during a game. Recalculate the unit's Attack, Ranged, Defence and Morale values from its type as per normal. A unit's current Health is not affected by switching role. Any special rules a unit has gained from their previous role are replaced with their new one. If they should gain the Rare rule, they immediately lose a stand. If a unit which already has Rare should switch to a role that also has, it would **not** lose a stand.
+#### Wildfire
+Wielders of terrible magics or experimental weapons, both as dangerous to the user as the target. At personal risk, they can bring greater pressure to bear at range. Use them before you lose them.
+
+> There may be circumstances that cause a unit to change its role during a game. Recalculate the unit's Attack, Ranged, Defence and Morale values from its type as per normal. A unit's current Health is not affected by switching role. Any special rules a unit has gained from their previous role are replaced with their new one. If they should gain [Rare](/honour-lies/army-builder.html#special-rules), they immediately lose a stand. If a unit which already has Rare should switch to a role that also has it, it would **not** lose a stand.
+
+<hr id="formations">
+
+## Formations
+All units must adopt one of the following formations during play: _wall_, _regular_, or _column_. When instructed to rebuild a formation, align the remaining stands until the unit is in its current formation. If the formation cannot be rebuilt due to friendly models, return the unit to its original position. While rebuilding a formation, unless otherwise specified, a stand that cannot be placed without overlapping an enemy stand is destroyed.
+
+Switching between formations is one of the most important tactical challenges of the game. Making sure units are in the right formation at the right time is necessary to achieve victory.
+
+| Wall (max. four stands wide) | Regular (max. two stands wide)     | Column (max. one stand wide)                   |
+| :--------------------------: | :--------------------------------: | :--------------------------------------------: |
+| \[ ^ \]\[ ^ \]\[ ^ \]\[ ^ \] | \[ ^ \]\[ ^ \]<br />\[ ^ \]\[ ^ \] | \[ ^ \]<br />\[ ^ \]<br />\[ ^ \]<br />\[ ^ \] |
+
+> When rebuilding a wall formation with more than two stands, the player must align a stand either side of the initial one.
 
 <hr id="bidding" />
 
 ## Bidding
 The lives of soldiers are little more than currency, ruthlessly gambled by their commanders. This game does not rely on dice to represent uncertainty and the fog of war. Instead, players secretly bid on the outcome.
 
-When required to bid, players are presented the 'pool' which is the maximum bid amount available. It's best to either gather this many tokens, though a die or dial could be used. Both players reveal their bids simultaneously, and may certainly bluff and bid nothing.
+A bid is revealed simultaneously, then players then spend their bid amounts and determine the winner. No player may alter their revealed bid, unless explicitly permitted to by a rule. A player is fully permitted to bid nothing, and bluffing is absolutely encouraged!
 
-**Once a bid has been revealed, neither player may alter their bid.**
-
-If the final total for both sides after modifiers is a tie, both sides reduce their pool by one, and must bid again.
+The most common bid is the Health bid during [combat](/honour-lies/gameplay#combat). After such a bid, the unit's remaining Health is reduced by the bid amount. A unit reduced to 0 Health in this fashion is immediately destroyed.
 
 <hr id="disorder" />
 
@@ -122,8 +128,8 @@ Units become disordered while they cannot see a friendly command holding, or as 
 
 A disordered unit affected in the following ways:
 
-- A disordered unit may not be [activated](/honour-lies/gameplay.html#activations)
-- Bidding Health during combat gains half the usual benefit (rounding down)
+- The unit may not be [activated](/honour-lies/gameplay.html#activation)
+- The unit bids at a 2:1 ratio in combat, so its combat score is improved by +1 for every **two** Health bid.
 
 <hr id="terrain" />
 
