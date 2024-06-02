@@ -5,104 +5,57 @@ permalink: honour-lies/army-builder.html
 pagetitle: Army Builder
 ---
 
-<form id="army-builder" onsubmit="event.preventDefault();">
-<script>
-    function buildArmy() {
-        types = {
-            'Beasts': [1, 1, 5, 4],
-            'Behemoth': [5, 3, 4, 6],
-            'Cavalry': [3, 1, 2, 5],
-            'Infantry': [2, 2, 3, 5]
-        }
-        roles = {
-            'Artillery': [0,2,1,1,2,'Slow, Limited'],
-            'Berserker': [2,0,1,1,2,'Rush'],
-            'Elite': [1,0,1,2,3,'Melee Discipline'],
-            'Heavy': [1,0,2,1,2,''],
-            'Levy': [1,0,1,1,1,'Expendable, Limited'],
-            'Monstrous': [2,0,2,1,3,'Limited'],
-            'Nightmare': [3,0,1,1,1,'Summoned, Swift'],
-            'Scout': [1,1,1,1,2,'Swift'],
-            'Wildfire': [1,1,1,1,1,'Ranged Discipline, Reckless Volley']
-        }
-        typeValue = document.getElementById('type').value
-        roleValue = document.getElementById('role').value
-        type = types[typeValue]
-        role = roles[roleValue]
-        document.getElementById('results').innerHTML = `<table>
-            <thead><tr><th>Name</th><th>Melee</th><th>Ranged</th><th>Defence</th><th>Morale</th><th>Health</th><th>Special</th></tr><thead>
-            <tbody><tr>
-                <td>${roleValue} ${typeValue}</td>
-                <td>${type[0]*role[0]}</td>
-                <td>${(type[0]*role[1]) || '-'}</td>
-                <td>${type[1]*role[2]}</td>
-                <td>${type[2]*role[3]}</td>
-                <td>${type[3]*role[4]}</td>
-                <td><em>${role[5]}</em></td>
-            </tr></tbody>
-        </table>`
-    }
-</script>
-<select id="role">
-    <option>Artillery</option>
-    <option>Berserker</option>
-    <option>Elite</option>
-    <option selected>Heavy</option>
-    <option>Levy</option>
-    <option>Monstrous</option>
-    <option>Nightmare</option>
-    <option>Scout</option>
-    <option>Wildfire</option>
-</select>
-<select id="type">
-    <option>Beasts</option>
-    <option>Behemoth</option>
-    <option>Cavalry</option>
-    <option selected>Infantry</option>
-</select>
-<button id="builder" onclick="buildArmy()">Build</button>
-<div id="results"></div>
-</form>
-
 <hr id="types" />
 
 ## Types
 
-| Name     | Attack | Defence | Morale | Health | Stands |
-| :------- | :----: | :-----: | :----: | :----: | :----: |
-| Beasts   | 1      | 1       | 5      | 4      | 4N     |
-| Behemoth | 5      | 3       | 4      | 6      | 3N     |
-| Cavalry  | 3      | 1       | 2      | 5      | 4N     |
-| Infantry | 2      | 2       | 3      | 5      | 4W     |
+| Name      | Attack | Defence | Morale | Health | Stands |
+| :-------- | :----: | :-----: | :----: | :----: | :----: |
+| Infantry  | 2      | 2       | 3      | 5      | 4W     |
+| Cavalry   | 3      | 1       | 2      | 5      | 4N     |
+| Beasts    | 1      | 1       | 5      | 4      | 4N     |
+| Behemoths | 5      | 3       | 4      | 6      | 3N     |
 
 <hr id="roles" />
 
 ## Roles
 
-| Name          | Melee  | Ranged | Defence | Morale | Health | Special                                |
-| :------------ | :----: | :----: | :-----: | :----: | :----: | :------------------------------------- |
-| **Artillery** | 0      | Atk x2 | -       | -      | x2     | _Slow_, _Limited_                      |
-| **Berserker** | Atk x2 | -      | -       | -      | x2     | _Rush_                                 |
-| **Elite**     | Atk    | -      | -       | x2     | x3     | _Melee Discipline_                     |
-| **Heavy**     | Atk    | -      | x2      | -      | x2     |                                        |
-| **Levy**      | Atk    | -      | -       | -      | -      | _Expendable_, _Limited_                |
-| **Monstrous** | Atk x2 | -      | x2      | -      | x3     | _Limited_                              |
-| **Nightmare** | Atk x3 | -      | -       | -      | -      | _Summoned_, _Swift_                    |
-| **Scout**     | Atk    | Atk    | -       | -      | x2     | _Swift_                                |
-| **Wildfire**  | Atk    | Atk    | -       | -      | x1     | _Ranged Discipline_, _Reckless Volley_ |
+| Name          | Melee | Ranged | Defence | Morale | Health | Special                                 |
+| :------------ | :---: | :----: | :-----: | :----: | :----: | :-------------------------------------- |
+| **Artillery** | 0     | x2     | =       | =      | =      | _Limited_, _Ponderous_                  |
+| **Berserker** | x2    | -      | =       | =      | x2     | _Rush_                                  |
+| **Elite**     | =     | -      | =       | x2     | x2     | _Fearless_, _Melee Discipline_          |
+| **Heavy**     | =     | -      | x2      | =      | x2     |                                         |
+| **Levy**      | =     | -      | =       | =      | =      | _Expendable_, _Limited_                 |
+| **Monstrous** | x2    | -      | x2      | =      | x2     | _Fear_, _Limited_, _Swift_              |
+| **Nightmare** | x2    | -      | =       | =      | =      | _Fear_, _Summoned_, _Swift_             |
+| **Scout**     | =     | =      | =       | =      | =      | _Skirmish_, _Swift_                      |
+| **Wildfire**  | =     | =      | =       | =      | =      | _Ranged Discipline_, _Reckless Volley_  |
 
 <hr id="special-rules" />
 
 ## Special Rules
+If a unit ever gains a special rule they already have, there is no additional effect.
 
 #### \[Combat\] Discipline
-This unit bids Health at a 1:2 ratio when raising the indicated combat score (ranged, melee, or defence), so improving it by +2 per Health bid. A disordered \[Combat\] Discipline unit bids Health at 1:1 in any combat, effectively ignoring both rules.
+This unit bids Health at a 1:2 ratio when raising the indicated combat score (ranged, melee, or defence), improving it by +2 per Health bid. A disordered unit with \[Combat\] Discipline bids Health at 1:1 to improve the \[combat\] score, effectively ignoring both rules.
 
 #### Expendable
-If this unit is destroyed at the start of a round, you may deploy a new unit of the exact same type and role to your deployment area in column formation. Should a unit have both the Expendable and Summoned special rules, it must still deploy using the Summoned rules (below), starting the round after the unit was destroyed.
+If this unit is ever destroyed, it is instead 'removed from play'. At the start of a round, any unit removed from play may be deployed to your deployment area in column formation. This is not considered the unit's activation for the round.
+
+> Should a unit have both the Expendable and Summoned special rules, it may still redeploy but must use the Summoned rules.
+
+#### Fear
+Enemy units count one fewer stands when calculating close combat score against this unit. A unit with Fear also has the Fearless special rule.
+
+#### Fearless
+This unit is not affected by Fear when calculating combat score.
 
 #### Limited
 This unit has one fewer stands for its type. For most units this leaves them with three stands, but behemoths only have two.
+
+#### Ponderous
+This unit may not perform its Move action in the same turn it used a Reform, but may still [March](/honour-lies/gameplay.html#activation).
 
 #### Reckless Volley
 This unit may bid Health during a ranged combat.
@@ -110,21 +63,166 @@ This unit may bid Health during a ranged combat.
 #### Rush
 This unit may choose to make an advance move instead of a ranged attack, even if it cannot make a ranged attack.
 
-#### Slow
-When activated, this unit must use the 'Slow' activation flow:
-
-1. Ranged
-2. Reform **or** Move
-3. Melee
-
-If a unit should also have the Swift special rule, ignore this effect.
+#### Skirmish
+This units do not become disordered while they cannot see a friendly command holding, though can from Tactics or other rules. In addition, friendly units do not lose a stand if fled through by a unit with this rule.
 
 #### Summoned
-This unit is not deployed during setup. When a unit is destroyed, players may choose to deploy a friendly unit with the Summoned special rule. However, if both players have a unit they wish to deploy, the player with the Initiative chooses which one is deployed.
+This unit may only be deployed as follows:
 
-To deploy, before removing the final destroyed stand, place a stand of the Summoned unit in alignment. Then, remove the destroyed unit and rebuild the summoned unit (all the rules for repositioning still apply).
+When a unit is destroyed, one player may choose to immediately deploy a friendly unit with the Summoned special rule. Should both players intend to deploy a unit, the first player chooses which is deployed. This is not considered the unit's activation for the round.
 
-A summoned unit is permitted to activate as normal this round, unless it is disordered.
+To deploy, before removing the final destroyed stand, place a stand of the Summoned unit in alignment with it. Then, remove the destroyed unit and rebuild the summoned unit, following the rules for repositioning as normal.
 
 #### Swift
-This unit may March even if within difficult terrain. If a unit should also have the Slow special rule, ignore this effect.
+This unit may March even if within difficult terrain.
+
+<hr id="quick-builder" />
+
+## Quick Builder
+<script>
+    types = {
+        'Beasts': [1, 1, 5, 4, [4,'N']],
+        'Behemoths': [5, 3, 4, 6, [3,'N']],
+        'Cavalry': [3, 1, 2, 5, [4,'N']],
+        'Infantry': [2, 2, 3, 5, [4,'W']]
+    }
+    roles = {
+        'Artillery': [0,2,1,1,1,['Limited', 'Ponderous']],
+        'Berserker': [2,0,1,1,2,['Rush']],
+        'Elite': [1,0,1,2,2,['Fearless', 'Melee Discipline']],
+        'Heavy': [1,0,2,1,2,[]],
+        'Levy': [1,0,1,1,1,['Expendable', 'Limited']],
+        'Monstrous': [2,0,2,1,2,['Fear', 'Limited', 'Swift']],
+        'Nightmare': [2,0,1,1,1,['Fear', 'Summoned', 'Swift']],
+        'Scout': [1,1,1,1,1,['Skirmish', 'Swift']],
+        'Wildfire': [1,1,1,1,1,['Ranged Discipline', 'Reckless Volley']]
+    }
+    function addUnit(type, role) {
+        nameValue = document.getElementById('name').value
+        typeValue = type ?? document.getElementById('type').value
+        roleValue = role ?? document.getElementById('role').value
+        specialistValue = type || role ? null : document.getElementById('specialist').value
+        type = types[typeValue]
+        standCount = type[4][0]
+        role = roles[roleValue]
+        specialist = roles[specialistValue]
+        if (specialist) {
+            if (role[5].includes('Limited') && specialist[5].includes('Limited')) {
+                window.alert("Specialist units cannot combine roles that both have the Limited special rule.")
+                return
+            }
+            roleValue = `${roleValue} ${specialistValue}`
+            for (i in role) {
+                role[i] = typeof role[i] === 'number'
+                    ? Math.max(role[i], specialist[i])
+                    : [...new Set([...role[i], ...specialist[i]])]
+            }
+        }
+        role[5].sort() // alphabetize special ruless
+        specials = []
+        for(special of role[5]) {
+            if(special === 'Limited') {
+                --standCount
+                specials.push(`<s>${special}</s>`)
+            } else if (special === 'Fearless' && specials[specials.length-1] === 'Fear') {
+                specials.push(`<s>${special}</s>`)
+            } else {
+                specials.push(special)
+            }
+        }
+        document.getElementById('quick-builder-list').innerHTML += 
+            `<tr><td>${ [
+                nameValue || roleValue, // Name
+                `<em>${typeValue}</em>`, // Type
+                type[0] * role[0], // Melee
+                type[0] * role[1] || '-', // Ranged
+                type[1] * role[2], // Defence
+                type[2] * role[3], // Morale
+                type[3] * role[4], // Health
+                `${standCount+type[4][1]}`,
+                `<em>${specials.join('</em>, <em>')}</em>` // Special rules
+            ].join('</td><td>') }</td></tr>`
+        document.getElementById('name').value = ""
+        document.getElementById('specialist-regular').selected = true
+    }
+    function undoLast() {
+        armyList = document.getElementById('quick-builder-list')
+        if (armyList.lastChild) {
+            armyList.removeChild(armyList.lastChild)
+        }
+    }
+    function undoList() {
+        document.getElementById('quick-builder-list').innerHTML = ""
+    }
+    function randomUnit() {
+        typeKeys = [
+            ...new Array(8).fill('Infantry'),
+            ...new Array(4).fill('Cavalry'),
+            ...new Array(2).fill('Behemoths'),
+            ...new Array(1).fill('Beasts'),
+        ]
+        roleKeys = ['Artillery', 'Berserker', 'Elite', 'Heavy', 'Levy', 'Monstrous', 'Nightmare', 'Scout', 'Wildfire']
+        addUnit(
+            typeKeys[Math.floor(Math.random() * typeKeys.length-1)],
+            roleKeys[Math.floor(Math.random() * roleKeys.length-1)],
+        )
+    }
+</script>
+<form onsubmit="event.preventDefault();">
+<fieldset>
+    <input id="name" placeholder="Unit Name" />
+    <select id="role">
+        <option>Artillery</option>
+        <option>Berserker</option>
+        <option>Elite</option>
+        <option selected>Heavy</option>
+        <option>Levy</option>
+        <option>Monstrous</option>
+        <option>Nightmare</option>
+        <option>Scout</option>
+        <option>Wildfire</option>
+    </select>
+    <select id="specialist">
+        <option id="specialist-regular" selected>Regular</option>
+        <option>Artillery</option>
+        <option>Berserker</option>
+        <option>Elite</option>
+        <option>Heavy</option>
+        <option>Levy</option>
+        <option>Monstrous</option>
+        <option>Nightmare</option>
+        <option>Scout</option>
+        <option>Wildfire</option>
+    </select>
+    <select id="type">
+        <option selected>Infantry</option>
+        <option>Cavalry</option>
+        <option>Beasts</option>
+        <option>Behemoths</option>
+    </select>
+    <button onclick="addUnit()">&plus; Add Unit</button>
+</fieldset>
+<br />
+<table>
+    <thead><tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Melee</th>
+        <th>Ranged</th>
+        <th>Defence</th>
+        <th>Morale</th>
+        <th>Health</th>
+        <th>Stands</th>
+        <th>Special</th>
+    </tr><thead>
+    <tbody id="quick-builder-list"></tbody>
+    <tfoot><tr>
+        <td colspan="4">
+            <button onclick="undoLast()">&#08634; Undo</button>
+            <button onclick="undoList()">&#08634; Undo All</button>
+        </td>
+        <td colspan="3"><button onclick="randomUnit()">+ Random Unit</button></td>
+    </tr><tfoot>
+</table>
+
+</form>
