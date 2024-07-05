@@ -5,38 +5,73 @@ permalink: honour-lies/advanced-rules.html
 pagetitle: Advanced Rules
 ---
 
+<hr id="type-majority">
+
+## Force Majority
+If a fully readied force has more units of a certain type and/or a certain role, that is considered a majority. If players have agreed to use advanced rules, different majorities will confer additional force rules, Strategy modifiers and specific orders. Specialist units are considered to be **both** of their combined roles to determine if the force has a role majority. 
+
+Players can develop their force to have a particular style using these rules, especially in combination with specialist units. There are some examples provided below.
+
+### Force Rules
+The following rules apply to forces depending on the **type** majority:
+
+- **Infantry:** All friendly infantry units may reform for free after a Retreat.
+- **Cavalry:** If a friendly cavalry unit is fled through by either a beast or infantry unit, it does not lose a stand.
+- **Beasts:** After seizing the Initiative, this unit may ready one additional regular beast unit.
+- **Behemoths:** All friendly beast and infantry units consider friendly behemoth units as command holdings for the purposes of disorder.
+
 <hr id="strategy" />
 
 ## Strategy
-If using the advanced rules, all players must select a **faction** when building their army. Each faction introduces a Strategy value, which is used during setup to determine Initiative and during the [Ready Orders](#orders) phase at the start of each round. Some factions have an army rule that may improve or hinder units of a certain type, role or specific combination of both. All factions have a selection of orders unique to them which only those armies can use.
+If using the advanced rules, each force has a Strategy value, which is used during setup to determine Initiative and during the [Prepare Orders](#orders) phase at the start of each round. All forces have Strategy equal to the number of regular units in their force, adjusted for majority as follows:
+
+#### Type Majority:
+- Infantry: **+2**
+- Cavalry: **+1**
+- Behemoths: **-1**
+- Beasts: **-2**
+
+#### Role Majority:
+- Elite/Scout: **+2**
+- Artillery/Heavy: **+1**
+- Levy/Wildfire: **-1**
+- Berserker/Monstrous/Nightmare: **-2**
 
 ### Setup
-To seize the Initiative during setup, players must instead bid using their chosen faction's Strategy. The highest bidder claims the Initiative. If Strategy bids are tied, both players lose a single point of Strategy (regardless of their bid amount) and must bid again. If both players have no Strategy left, the youngest player seizes the Initiative as normal.
+To seize the Initiative during setup, players must instead bid using their final Strategy amount. The highest bidder claims the Initiative, and both must spend their bids as normal. If Strategy bids are tied, both players lose a single point of Strategy (regardless of their bid amount) and must bid again. If both players have no Strategy left, the youngest player seizes the Initiative.
 
 <hr id="orders" />
 
 ## Orders
+Orders represent a capable general using talents for improvisation or preparation. All forces will have a selection of orders available to them from which they can prepare each round. This selection is made while building the force, and includes all common orders, those for its type majority, and a single General order.
+
 In the advanced game, rounds are broken up into the following phases:
 
-1. Ready Orders
+1. Prepare Orders
 2. Open Orders
 3. Activations
 
-During the Ready Orders phase, starting with the second player, players take turns to ready orders. Orders are readied by player's spending remaining Strategy. Orders may be selected from common orders and those unique to their faction.
+During the Prepare Orders phase, starting with the second player, players take turns to prepare orders. Orders are prepared by spending remaining Strategy, from the selection made when building a force.
 
-### Ready
-Players must share the Strategy cost of any order they ready, but keep the specific order secret. Players can ready any number of orders, though only one of each order can be readied per round.
+### Prepare
+Players must share the Strategy cost of any order they prepare, but keep the specific order secret. Players can prepare any number of orders, though only one of each order can be readied per round.
 
 ### Open Orders
 Orders without a trigger are considered 'open', and are revealed during this phase, starting with the first player. Many open order effects last the entire round, though some take immediate effect.
 
 ### Activations
-This phase proceeds as normal for the round, however if a situation occurs that matches the trigger condition for an order, it may be played. Should both players have orders with the same trigger, the first player has the final say which is resolved first. 
+This phase proceeds as normal for the round, however if a situation occurs that matches the trigger condition for an order, it may be played. Should both players have orders with the same trigger, the first player has the final say which is resolved first.
 
-At the end of a round, all orders are discarded, even if unplayed.
+At the end of a round, all orders are discarded and their Strategy costs are fully recovered.
 
 ### Common Effects
 Some orders effects are pretty standard, and are presented below.
+
+#### Type/Role Specific
+Some orders may only affect units of a specific type or role. Specialist units count as both of their roles to be targeted for such orders.
+
+#### Modify Attribute
+Some orders may indication attribute modifications, and these all refer to the unit profile. No modification can raise an attribute beyond double or reduce it below 0.
 
 #### Ruin(X)
 If Ruin(X) affects a unit, that unit must either:
@@ -46,18 +81,44 @@ If Ruin(X) affects a unit, that unit must either:
 ### Common Orders
 | Name                  | Cost | Trigger                           | Effect |
 | :-------------------- | :--: | :-------------------------------- | :----- |
-| Minor Bluff!          | 1    | Activating a friendly unit        | Recover 1 Strategy. |
-| We're surrounded!     | 1    | Melee defeat                      | Defeated unit is disordered for the rest of this round |
+| Sound The Drums!      | 1    | Activating a unit                 | Unit immediately performs a Move action, then activates as normal. |
 | Rally!                | 1    | Defeated unit removes a stand     | Return the stand to the unit. |
-| Major Bluff!          | 2    | Activating a friendly unit        | Recover 2 Strategy. |
-| But Sir- KEEP FIRING! | 2    | Activating an Artillery unit      | Unit gains [Reckless Volley](/honour-lies/army-builder.html#special-rules) for this turn. |
-| No Mercy!             | 2    | Melee victory                     | Victorious unit may Advance and potentially engage in another melee. |
-| Fortify Our Position! | 2    | -                                 | Nominate an infantry or cavalry unit to be disordered for this round. At the end of the round, position a command holding in alignment. |
-| Their Finest Hour!    | 3    | Melee victory                     | Return a stand to the victorious unit. It also gains 3 Health, and for the rest of the round is +3 Morale. |
-| Claim Their Standard! | 3    | Melee defeat                      | Ruin(5) the defeated unit, and it must retreat again. |
-| Ambush!               | 3    | Unit moves into obscuring terrain | Reposition the unit anywhere on the board within obscuring terrain. Recover 1 Strategy if the unit's role is **Scout** |
+| Claim Their Standard! | 2    | Melee defeat                      | Ruin(2) the defeated unit, and it must retreat again. |
+| Ambush!               | 3    | Unit moves into obscuring terrain | Reposition the unit anywhere on the board within obscuring terrain. Recover 1 Strategy if the unit has [Skirmish](/honour-lies/army-builder.html#special-rules) |
 
-> If an order modifies a value, it is always the unit & role calculated value, not the type attribute. No value may be reduced below 0, but may be raised beyond its starting amount.
+### Type Orders
+
+#### Majority Infantry
+| Name                    | Cost | Trigger                    | Effect |
+| :---------------------- | :--: | :------------------------- | :----- |
+| March On!               | 1    | Activating a unit          | The **victorous** unit must retreat from combat, though defender still has to check cohesion. |
+| Shieldwall!             | 2    | Calculating defence value  | The defending infantry unit may count all its stands. |
+| We've Trained For This! | 2    | Start of melee             | An engaged infantry unit gains a [Combat Discipline](/honour-lies/army-builder.html#special-rules) of the player's choice. |
+
+#### Majority Cavalry
+| Name          | Cost | Trigger                 | Effect |
+| :------------ | :--: | :---------------------- | :----- |
+| Shock & Awe!  | 1    | Start of melee          | Ruin(1) engaged enemy unit. |
+| Brace Lances! | 2    | Calculating melee value | The attacking cavalry unit may count all its stands. |
+| Overrun!      | 2    | Melee victory           | Victorious unit may immediately Advance and potentially engage in another melee. |
+
+#### Majority Beasts
+| Name          | Cost | Trigger            | Effect |
+| :------------ | :--: | :----------------- | :----- |
+| Unruly Melee! | 1    | Start of melee     | The engaged enemy unit is disordered for this combat. |
+| Wild Magic!   | 2    | Start of the round | Nominate two enemy units. Your opponent must Ruin(3) one of them. |
+| Overwhelm!    | 2    | Melee victory      | Ruin(3) the **victorious** unit, then destroy the defeated unit. |
+
+#### Majority Behemoths
+| Name          | Cost | Trigger            | Effect |
+| :------------ | :--: | :----------------- | :----- |
+| Thunderstomp! | 1    | Start of the round | Remove one piece of terrain a Behemoth unit is currently within. |
+| Rain of Fire! | 2    | Activating a unit  | Ruin(3) an enemy unit visible to the active unit. |
+| Despair!      | 2    | Combat victory     | Ruin(5) defeated unit. |
+
+
+
+
 
 <hr id="factions" />
 

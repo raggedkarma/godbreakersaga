@@ -92,7 +92,7 @@ Carefully trained as the greatest soldiers that can be fielded. Dependable, but 
 Brutes who take the hits and keep on coming. These can hold the centre pretty well, though do not discount them on the attack.
 
 #### Levy
-Peasants and mercenaries raised from common stock. There are always more that can be convinced to march, by coin or whip. These are completely disposable troops- better to throw them in to trouble than carefully shepherd them.
+Peasants and mercenaries raised from common stock. There are always more that can be convinced to march, by coin or whip, though they are the furthest thing from disciplined. These are completely disposable troops- better to throw them in to trouble than carefully shepherd them.
 
 #### Monstrous
 These mighty warriors swell with magics or speak to a potent genetic legacy. Spawn of old tragedies or terrible curses, and often the last of their kind. Not to be wasted on inefficient targets, so make sure to chose their opponents well.
@@ -134,14 +134,13 @@ The most common bid is the Health bid during [combat](/honour-lies/gameplay#comb
 <hr id="disorder" />
 
 ## Disorder
-A war is rarely won or lost by pure violence. The cunning general manages their war materiel and messages on the battlefield better than their troops. If cut off from the chain of command and steady resupply, a unit is in serious trouble.
+A war is rarely won or lost by pure violence, but by this measure the mettle of those fighting are brutally tested.
 
-Units become disordered while they cannot see a friendly command holding, or as a result of a Tactic. Some units are immune to disorder, and can never be affected by it. A unit occupying a friendly command holding is immune to disorder.
+Units become disordered when they are defeated in combat or as a result of a Tactic. If a unit becomes immune to disorder, they immediately recover from it, in addition to not being able to become disordered. A unit occupying a friendly holding is immune to disorder.
 
-A disordered unit affected in the following ways:
+While disorderd, a unit affected in the following ways:
 
-- The unit may not [March](/honour-lies/gameplay.html#activation)
-- The unit may not perform a ranged attack if they did so in the previous round.
+- The unit may not perform Ranged Attack or March [action](/honour-lies/gameplay.html#activation) during its activation.
 - The unit bids at a 2:1 ratio in combat, so its combat score is improved by +1 for every **two** Health bid.
 
 <hr id="terrain" />
@@ -157,20 +156,20 @@ A single area of terrain may be one or more combinations of _impassable_, _diffi
 Any stand or marker placed overlapping impassable terrain is removed.
 
 #### Difficult
-A unit within difficult terrain after their first move may not perform their second move.
+A unit within difficult terrain may not perform a March action.
 
 #### Obscuring
-A unit within obscuring terrain increase their base defence score in ranged combats by +1 for every stand within it.
+Every stand counted within obscuring terrain increases their defence score by +1 if target by a ranged attack.
 
 #### High Ground
-Hills and ridges improve base melee scores by +1 for every affected stand. A unit that is on high ground may also see and be seen through all intervening terrain.
+ A unit that is on high ground may see and be seen through all intervening terrain. Every stand counted on a hill or ridge improves base melee score by +1.
 
 ### Holdings
 A holding can represent anything from a hastily erected defensive position to a crumbling watchtower. It is a location occupied by soldiers for defence, and can serve as a place to coordinate strategies.
 
 All holdings are impassable 60x60mm markers. A single infantry or cavalry unit may **occupy** a holding during play. Unoccupied markers are treated as enemy units for engagement purposes, though no combat is fought. If a unit is in base contact with an unoccupied holding at the end of a turn, the unit may occupy the holding. While occupying a holding, place a stand from the occupying unit on the marker.
 
-Once occupied, a holding is considered friendly to the occupying force, even if they leave. While occupied, the unit inside counts all stands when calculating defence, and two when calculating ranged (see [Combat](/honour-lies/gameplay.html#combat)). When defending, every edge considered the unit's front face, and all stands are within obscuring terrain.
+Once occupied, a holding is considered friendly to the occupying force, even if they leave. While occupied, the unit inside counts all stands when calculating defence, and two when calculating ranged (see [Combat](/honour-lies/gameplay.html#combat)). When defending, every edge considered the unit's front face, and all stands are within obscuring terrain. Units occupying a holding are immune to disorder.
 
 If it has not made a ranged attack, a unit may use a Move action to 'sally forth' from a holding. The unit places a stand in alignment with one of the holding's facings, facing away from the holding, then rebuild any formation of their choosing. This is considered an Advance, including the potential to engage in combat.
 
@@ -202,4 +201,4 @@ These rules are written with the assumption of 15mm miniatures. For reference, u
 - 28mm: 100 x 50mm
 - 32mm: 120 x 60mm
 
-Given the space and model requirements, I would not encourage below 10mm or above 15mm, but it's absolutely playable. Note that holdings also change size to match the longest base edge square, so a 3mm-scale holding would be a 20mm square.
+Given the space and model requirements, I would not encourage gaming below 10mm or above 15mm scale, but it's absolutely playable. Note that holdings also change size to match the longest base edge, so a 3mm-scale holding would be a 20mm square.
