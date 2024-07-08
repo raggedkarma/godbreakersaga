@@ -23,7 +23,7 @@ A player may ready one [specialist unit](/honour-lies/index.html#units) for ever
 Players place terrain as determined by the scenario, then seize the Initiative. For basic play, the youngest player always seizes the Initiative. That's just what they're like. The player with the Initiative is referred to as the **first player**, and their opponent the **second player**.
 
 #### Deploy Units
-Players first deploy a unit to their command holding. Then, starting with the second player, players take turns to deploy remaining units anywhere within their deployment area.
+Starting with the second player, players take turns to deploy their units anywhere within their deployment area, in any formation.
 
 <hr id="rounds" />
 
@@ -82,7 +82,9 @@ Reposition a stand from the front rank behind the unit, in alignment, then rebui
 
 ![retreat move](/resources/images/honour-lies/retreat-move.png)
 
-If a stand would be placed overlapping a friendly stand after a Retreat, the unit may flee through it. Place the stand in alignment with the opposite face of the friendly unit, facing toward it, then rebuild the formation. A unit cannot flee through multiple friendly units in the same turn.
+If fleeing from combat after being attacked in the rear, a unit makes a Retreat move but instead repositions a stand from the back rank in front of the unit, in alignment.
+
+If a stand would be placed overlapping a friendly stand after a Retreat, the unit may flee through it. Place the stand in alignment with the opposite face of the friendly unit, facing toward it, then rebuild the formation. A unit cannot flee through multiple friendly units in the same turn, and subsequent overlapping stands are removed.
 
 Finally, destroy a stand from the unit that has been fled through.
 
@@ -94,12 +96,12 @@ Reposition a stand from the rear rank to either side of the unit, in alignment a
 ![pivot move](/resources/images/honour-lies/pivot-move.png)
 
 #### Single Stand Unit
-A unit with a singe stand remaining may only move by shifting once in an aligned direction its full base size, then rotating up to 90 degrees.
+To make any move a unit with a singe stand, place one a removed stand in full alignment, then remove the original stand. Once moved, you may rotate the new stand up to 90 degrees.
 
 ![single stand move](/resources/images/honour-lies/single-stand-move.png)
 
 ### March
-A unit may not march if engaged or in difficult terrain. A march is another **Advance** move, as detailed above.
+A unit may not march if disordered, engaged or in difficult terrain. A march is another **Advance** move, as detailed above.
 
 ### Melee
 An engaged unit must now fight a [melee combat](#combat):
@@ -162,4 +164,4 @@ Defeat causes even capable warriors to consider the terrible cost of holding fas
 If the margin of victory is equal to or greater than the Morale value of the defeated unit, one stand from that unit is removed. If the margin of victory is equal to or greater than twice the Morale value of the defeated unit, one additional stand from that unit is removed, to a maximum of two.
 
 #### Retreat
-The defeated unit, if not destroyed, must now make a Retreat move.
+The defeated unit, if not destroyed, must now make a Retreat move. If they were attacked in the rear, then they must Retreat forward.

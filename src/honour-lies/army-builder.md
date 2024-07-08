@@ -13,8 +13,10 @@ pagetitle: Army Builder
 | :-------- | :----: | :-----: | :----: | :----: | :----: |
 | Infantry  | 2      | 2       | 3      | 5      | 4W     |
 | Cavalry   | 3      | 1       | 2      | 5      | 4N     |
-| Beasts    | 1      | 1       | 5      | 4      | 6N     |
+| Beasts    | 1      | 1       | 5      | 4      | 6*     |
 | Behemoths | 5      | 3       | 4      | 6      | 3N     |
+
+> \* All beast stands in a unit must face the same edge, either long or short depending on the miniatures.
 
 <hr id="roles" />
 
@@ -46,7 +48,7 @@ The following section will also try to clear up situations where a specialist un
 This unit bids Health at a 1:2 ratio when raising the indicated combat score (ranged, melee, or defence), improving it by +2 per Health bid. A disordered unit with \[Combat\] Discipline bids Health at 1:1 to improve the \[combat\] score, effectively ignoring both rules.
 
 #### Expendable
-If this unit would be destroyed, it is instead 'removed from play'. At the start of any subsequent round, any unit removed from play may be deployed to your deployment area in column formation. This is not considered the unit's activation for the round.
+If this unit would be destroyed, it is instead 'removed from play'. At the start of any subsequent round, any _Expendable_ unit removed from play may be deployed to your deployment area in column formation. This is not considered the unit's activation for the round.
 
 #### Fear
 Enemy units count one fewer stands when calculating their close combat score against this unit. A unit with Fear also has the Fearless special rule.
@@ -88,7 +90,7 @@ This unit may March even if within difficult terrain, and may Reform instead of 
 ## Quick Builder
 <script>
     types = {
-        'Beasts': [1, 1, 5, 4, [6,'N']],
+        'Beasts': [1, 1, 5, 4, [6,'']],
         'Behemoths': [5, 3, 4, 6, [3,'N']],
         'Cavalry': [3, 1, 2, 5, [4,'N']],
         'Infantry': [2, 2, 3, 5, [4,'W']]
@@ -178,7 +180,7 @@ This unit may March even if within difficult terrain, and may Reform instead of 
         roleKeys = Object.keys(roles)
         addUnit(
             typeKeys[Math.floor(Math.random() * typeKeys.length-1)],
-            roleKeys[Math.floor(Math.random() * roleKeys.length-1)],
+            roleKeys[Math.floor(Math.random() * roleKeys.length-1)]
         )
     }
 </script>
@@ -236,7 +238,7 @@ This unit may March even if within difficult terrain, and may Reform instead of 
             <button onclick="undoLast()">&#08634; Undo</button>
             <button onclick="undoList()">&#08634; Undo All</button>
         </td>
-        <td colspan="3"><button onclick="randomUnit()">+ Random Unit</button></td>
+        <td colspan="4"><button onclick="randomUnit()">+ Random Unit</button></td>
     </tr><tfoot>
 </table>
 

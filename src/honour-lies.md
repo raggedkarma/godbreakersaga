@@ -37,7 +37,7 @@ All units have a front, two flanks (or sides), and a rear facing. The size of ea
 Several rules will require a unit to be able to see another. Units can 'see' in all directions. Terrain, holdings and enemy units block sight if there is no imaginary line that could be drawn that does not pass entirely through.
 
 ### Deploy or Reposition
-When deploying or repositioning a unit, it cannot be in base contact or overlapping any other unit. A unit may be deployed or repositioned into an unoccupied holding, and immediately occupy it as long as it would not immediately be engaged. If a unit would be repositioned or deployed such that it would be disordered (see [Disorder](#disorder)), a stand is removed after rebuilding the formation.
+When deploying or repositioning a unit, it cannot be in base contact or overlapping any other unit. A unit may be deployed or repositioned into an unoccupied holding, and immediately occupy it as long as it would not immediately be engaged.
 
 ### Type
 A unit's type determines its orientation and attributes: _Attack_, _Defence_, _Morale_, and _Health_. All units must be one of four types: _beasts_, _behemoths_, _cavalry_ and _infantry_. 
@@ -47,22 +47,22 @@ The [Army Builder](/honour-lies/army-builder.html#types) will list the attribute
 #### Infantry
 These are the backbone of any force, equipped with heavy armour and the best weapons, or pitchforks and fury.
 
-> A unit of infantry consists of four stands, facing toward the longest edge.
+> A unit of infantry consists of four stands, facing toward a long edge.
 
 #### Cavalry
 Capably trained soldiers granted the privilege of riding into battle. They are best used to harass and break enemy lines, and will suffer if caught out or knocked from their mounts. While some armies use them sparingly, others are entirely built on the backs of mobile warfare.
 
-> A unit of cavalry consists of four stands, facing toward the shorter edge.
+> A unit of cavalry consists of four stands, facing toward a short edge.
 
 #### Beasts
 Swarms of biting vermin driven before the main force, or great dogs raised from birth to hunt. They are pure havoc for any general to contend with.
 
-> A unit of beasts consists of four stands, facing toward the shorter edge.
+> A unit of beasts consists of six stands, all facing toward the same edge.
 
 #### Behemoths
 Great creatures or engines of war that may well turn the tide of any engagement, but may take longer to thunder into the maelstrom. Those who martial such incredible forces may be appreciably careful in their use or equally struck by their majesty and rely on them to their cost.
 
-> A unit of behemoths consists of three stands, facing toward the shorter edge.
+> A unit of behemoths consists of three stands, facing toward a short edge.
 
 ### Roles
 Regular units select a role which builds from its type to calculate its _Melee_, _Ranged_, _Defence_, _Morale_ and _Health_ values. Certain roles may limit the number of stands in a unit, to represent their rarity or poor fighting discipline. Every faction could rationalise any combination, and players are encouraged to experiment for themselves.
@@ -80,10 +80,10 @@ The selected role modifies the type's attribute values, and may grant the unit s
 The [Army Builder](/honour-lies/army-builder.html#roles) will list the modifiers for all roles.
 
 #### Artillery
-Rain fire with units that can bring terrible forces to bear, from cunning sorcery or alchemy to even more punishing combinations of the two. While their ranged attacks are tremendous, these units are incredibly ponderous and easily overrun.
+Rain fire with units that can bring terrible forces to bear, from cunning sorcery or alchemy to even more punishing combinations of the two. While their ranged attacks are tremendous, these units will prove slow and may be easily overrun.
 
 #### Berserker
-The epitome of crude violence, either warriors of barely restrained fury or creatures driven near mad with hunger. These will absolutely bring the fight to the enemy, but can't take it as well as they can dish it out.
+The epitome of crude violence, comprising of warriors of barely restrained fury or creatures driven near-mad with hunger. These will absolutely bring the fight to the enemy, but can't take it as well as they can dish it out.
 
 #### Elite
 Carefully trained as the greatest soldiers that can be fielded. Dependable, but can struggle if they find themselves cut off.
@@ -95,10 +95,10 @@ Brutes who take the hits and keep on coming. These can hold the centre pretty we
 Peasants and mercenaries raised from common stock. There are always more that can be convinced to march, by coin or whip, though they are the furthest thing from disciplined. These are completely disposable troops- better to throw them in to trouble than carefully shepherd them.
 
 #### Monstrous
-These mighty warriors swell with magics or speak to a potent genetic legacy. Spawn of old tragedies or terrible curses, and often the last of their kind. Not to be wasted on inefficient targets, so make sure to chose their opponents well.
+These mighty warriors swell with magics or speak to a potent genetic legacy. Spawn of old tragedies or terrible curses, and often the last of their kind. Not to be wasted on inefficient targets, so make sure to choose their opponents well.
 
 #### Nightmare
-Terrible things called by death. These may be forgotten spirits, shrieking wraiths or cruel fae. Should the nemy hold fast before them, such horrors may find their unreal forms little more resilient than shadow.
+Terrible things called by death. These may be forgotten spirits, shrieking wraiths or cruel fae. Should the enemy hold their nerve, such horrors may find their unreal forms little more resilient than shadow.
 
 #### Scout
 Those who move with the land and harass the enemy. Usually creatures or people of the wild, who do not fight for promised riches or glory, but to save their home and kin. Quick, but must choose their targets carefully. Find their flanks, and disrupt supply lines.
@@ -112,15 +112,17 @@ Specialist units calculate values using a combined role. A combined role is made
 <hr id="formations">
 
 ## Formations
-All units must adopt one of the following formations during play: _wall_, _square_, or _column_. When instructed to rebuild a formation, align the remaining stands until the unit is in its current formation. If the formation cannot be rebuilt due to friendly models, return the unit to its original position. After rebuilding a formation, unless otherwise specified, a stand that could not be placed without overlapping an enemy stand or a battlefield edge is removed.
+All units must adopt one of the following formations during play: _wall_, _square_, or _column_. Each formation is defined by how wide each rank must be before a new one may be added. When instructed to rebuild a formation, align the remaining stands until the unit is in its current formation. If the formation cannot be rebuilt due to friendly models, return the unit to its original position. After rebuilding a formation, unless otherwise specified, a stand that could not be placed without overlapping an enemy stand or a battlefield edge is removed.
 
 Switching between formations is one of the most important tactical challenges of the game. Making sure units are in the right formation at the right time is necessary to achieve victory.
 
-| Wall (up to four stands wide) | Square (up to two stands wide)     | Column (up to one stand wide)                  |
-| :---------------------------: | :--------------------------------: | :--------------------------------------------: |
-| \[ ^ \]\[ ^ \]\[ ^ \]\[ ^ \]  | \[ ^ \]\[ ^ \]<br />\[ ^ \]\[ ^ \] | \[ ^ \]<br />\[ ^ \]<br />\[ ^ \]<br />\[ ^ \] |
+| Formation | Rank Width | Example |
+| :-------- | :--------: | :--------------------------------------------- |
+| _Wall_    | 4          | \[ ^ \]\[ ^ \]\[ ^ \]\[ ^ \] |
+| _Square_  | 2          | \[ ^ \]\[ ^ \]<br />\[ ^ \]\[ ^ \] |
+| _Column_  | 1          | \[ ^ \]<br />\[ ^ \]<br />\[ ^ \]<br />\[ ^ \] |
 
-> When rebuilding a wall formation with more than two stands, the player must align a stand either side of the initial one.
+> When rebuilding a wall formation with more than two stands, the player must align stands on both sides of the initial one.
 
 <hr id="bidding" />
 
@@ -136,9 +138,9 @@ The most common bid is the Health bid during [combat](/honour-lies/gameplay#comb
 ## Disorder
 A war is rarely won or lost by pure violence, but by this measure the mettle of those fighting are brutally tested.
 
-Units become disordered when they are defeated in combat or as a result of a Tactic. If a unit becomes immune to disorder, they immediately recover from it, in addition to not being able to become disordered. A unit occupying a friendly holding is immune to disorder.
+Units become disordered when they are defeated in combat or as a result of an Order. If a unit becomes immune to disorder, they immediately recover from it, in addition to not being able to become disordered. A unit occupying a friendly holding is immune to disorder.
 
-While disorderd, a unit affected in the following ways:
+While disordered, a unit affected in the following ways:
 
 - The unit may not perform Ranged Attack or March [action](/honour-lies/gameplay.html#activation) during its activation.
 - The unit bids at a 2:1 ratio in combat, so its combat score is improved by +1 for every **two** Health bid.
@@ -187,18 +189,11 @@ This game was written with certain core concepts in mind:
 
 I wanted to enjoy games at a slightly more removed scale of warfare than I was used to playing, where wars are not won by any single act of heroism but by uncounted minor acts of bloody defiance.
 
-In that spirit it is important to recognise unit Health is never lost through enemy action. The decision to inflict Health- for warriors to die- rests entirely with their General. A combat might even be won by the necessary sacrifice! In contrast, the removal of stands represents the loss of good order, not casualities. They may be injured or weary, but are still alive and fighting, just for themselves instead of each other. It is the burden of command to decide which fight is worth dying for.
+In that spirit it is important to recognise unit Health is never lost through enemy action. The decision to inflict Health- for warriors to die- rests entirely with their General. A combat might even be won by the necessary sacrifice! In contrast, the removal of stands represents the loss of good order, not casualties. They may be injured or weary, but are still alive and fighting, just for themselves instead of each other. It is the burden of command to decide which fight is worth dying for.
 
 I have had fun digging into the many interesting games that support this scale, including _Dragon Rampant_, _Dux Bellorum_, _Fantasy Battles_, _Restless Hordes_ and _Warmaster_, among others. I'd encourage folk to give all of them a try.
 
 ### Alternate Scales
-These rules are written with the assumption of 15mm miniatures. For reference, use the size of the stand appropriate for its scale:
+While the game assumes players will use 6-15mm miniatures, ultimately, this game is intentionally free of measurment. The only real requirement is that both players are using the same stand size, which is rectangular and has a long edge twice the length of the short edge.
 
-- 3mm: 20 x 10mm
-- 6mm: 30 x 15mm
-- 10mm: 40 x 20mm
-- 15mm: 60 x 30mm
-- 28mm: 100 x 50mm
-- 32mm: 120 x 60mm
-
-Given the space and model requirements, I would not encourage gaming below 10mm or above 15mm scale, but it's absolutely playable. Note that holdings also change size to match the longest base edge, so a 3mm-scale holding would be a 20mm square.
+Beyond that, the game should scale easily to meet existing collections or personal preference.
