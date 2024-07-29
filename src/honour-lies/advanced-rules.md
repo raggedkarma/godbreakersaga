@@ -5,18 +5,21 @@ permalink: honour-lies/advanced-rules.html
 pagetitle: Advanced Rules
 ---
 
-If using the advanced rules, forces gain Heroes, a Strategy rating, and a number of Orders. The rules for each are presented below.
+If using the advanced rules, forces gain Heroes, must bid Strategy to determine first player, and may play a number of Orders during a round. The rules for each are presented below.
 
 <hr id=heroes />
 
 ## Heroes
-When building a force, both players add one Hero for every four stands. While an impressive miniature is recommended to represent these mighty individuals on the battlefield, players may simply use a card token. It is highly encouraged to name your Heroes and give them interesting backstories.
+Players gain one Hero per four units in their army, and each one must be assigned to a different unit before the game. While an impressive miniature on a 30mm base is recommended, players may simply use a card token. It is highly encouraged to name your Heroes and give them interesting backstories.
 
-After deployment, starting with the second player, each Hero is assigned to a different unit. If using miniatures, these are deployed in contact with the front rank, but for all purposes they are not a stand. If a unit is ever removed from play or destroyed, their assigned Hero is removed from the game.
+If using miniatures, these are deployed in contact with the front rank, but for all purposes they are not a stand. If a unit is ever removed from play or destroyed, their assigned Hero is also removed from the game.
 
 > Heroes are not a stand, so are ignored for moving, lines of sight, and never counted in combat.
 
-When moving a unit with a Hero miniature, it can be easier to set the model aside, move the unit as normal, then place the Hero back in contact.
+When moving a unit with a Hero miniature, it is recommended to set the model aside, move the unit as normal, then place the Hero back in alignment.
+
+### Wisdom
+For each Hero in play, the Strategy for their force is increased by +2.
 
 ### Duty
 While a unit has a Hero assigned to them, they gains a +1 bonus to its calculated Morale value.
@@ -27,10 +30,14 @@ During combat, after both sides have revealed their Health bid, a player may sac
 <hr id="strategy" />
 
 ## Strategy
-Each force's initial Strategy rating is equal to the number of regular units in it. This is a limited resource which is used during setup to determine Initiative and to allow a force to use Orders during the game.
+At the start of each round, each player builds a Strategy pool. All forces have a base Strategy of 2, plus an additional two per Hero on the field.
 
-### Setup
-To seize the Initiative during setup, players must instead bid using their Strategy. The highest bidder claims the Initiative, and both must spend their bids as normal. If Strategy bids are tied, both players lose a single point of Strategy (regardless of their bid amount) and must bid again. If both players have no Strategy left, the youngest player seizes the Initiative.
+> **Strategy** = 2 + (+2 per remaining Hero)
+
+### Initiative
+At the start of each round, players must bid for the Initiative using their Strategy. If both players bid the same amount during the first round, the youngest player gains the Initiative. During later rounds, a tied bid results in the previous round's second player gaining the Initiative.
+
+As normal, the bid amount reduces the remaining Strategy, which is spent during the round to perform Orders.
 
 <hr id="orders" />
 
@@ -54,20 +61,18 @@ If Ruin(X) affects a unit, that unit must either:
 
 | Name                  | Cost | Effect |
 | :-------------------- | :--: | :----- |
-| But Sir- Keep Firing! | 1    | Active unit gains [Reckless Volley](/honour-lies/army-builder.html#special-rules) for this turn. |
+| But Sir- Keep Firing! | 1    | Active unit gains [Reckless Volley](/honour-lies/roster-builder.html#special-rules) for this turn. |
 | Claim Their Standard! | 1    | If this unit defeats another in melee this turn, Ruin(2) the defeated unit. |
-| Hold Fast!            | 1    | Return a stand to the active unit. |
-| Kill The Messenger!   | 1    | Active unit is disordered for this turn. |
 | Your People Need You! | 1    | A Hero assigned to a friendly unit is instead assigned to the active unit. |
-| Sound The Drums!      | 1    | Active unit gains [Swift](/honour-lies/army-builder.html#special-rules) for this turn. |
+| Sound The Drums!      | 1    | Active unit gains [Rush](/honour-lies/roster-builder.html#special-rules) for this turn. |
 | Shieldwall!           | 1    | Units engaged by the active unit in melee this turn count all their stands when calculating base defence value. |
-| Swear Vengeance!      | 1    | Active unit is immune to disorder for the round. |
-| Bring It Down!        | 2    | Active unit may make ranged attacks in any direction and, when calculating base ranged value, counts all their stands this turn. |
-| Fight Like Hell!      | 2    | Active unit gains [Fear](/honour-lies/army-builder.html#special-rules) for this turn. |
+| Steel Your Hearts!    | 1    | Active unit is immune to disorder for the round. |
+| Fight Like Hell!      | 2    | Active unit gains [Fear](/honour-lies/roster-builder.html#special-rules) for this turn. |
+| Hold Fast!            | 2    | Return a stand to the active unit. |
 | No Mercy!             | 2    | Active unit counts all their stands when calculating base melee value this turn. |
 | Shatter Them!         | 2    | Units engaged by the active unit are -1 Morale. |
 | Wild Magic!           | 2    | Nominate a friendly unit. The active player must Ruin(3) either the active or nominated unit. |
-| Ambush!               | 3    | If the active unit has [Skirmish](/honour-lies/army-builder.html#special-rules), this order costs 2 Strategy. If within obscuring terrain, remove the active unit from play. At the start of any subsequent round, their player may reposition them anywhere on the battlefield within obscuring terrain. |
+| Ambush!               | 3    | If the active unit has [Skirmish](/honour-lies/roster-builder.html#special-rules), this order costs 2 Strategy. If within obscuring terrain, remove the active unit from play. At the start of any subsequent round, their player may reposition them anywhere on the battlefield within obscuring terrain. |
 | Apotheosis!           | 3    | If the active unit has a Hero, all friendly units gain 2 Health and the active unit cannot perform any actions this turn. |
 | Arise!                | 3    | Active unit gains 5 Health. |
 | Obey!                 | 3    | Return all lost stands to the active unit. |

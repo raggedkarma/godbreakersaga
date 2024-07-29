@@ -48,7 +48,7 @@ self.addEventListener("fetch", event => {
                 const responseClone = response.clone()
                 caches.open(CACHE_NAME).then(cache => {
                     console.log("cache.update", {request, response})
-                    cache.put(request, responseClone)
+                    cache.add(request, responseClone)
                 })
                 return response
             }).catch(() => cachedResponse)
