@@ -10,7 +10,7 @@ pagetitle: Roster Builder
 ## Quick Builder
 <script>
     types = {
-        'Beasts': [1, 1, 5, 4, [6,'']],
+        'Beasts': [1, 1, 5, 4, [6]],
         'Behemoths': [5, 3, 4, 6, [3,'N']],
         'Cavalry': [3, 1, 2, 5, [4,'N']],
         'Infantry': [2, 2, 3, 5, [4,'W']]
@@ -32,10 +32,10 @@ pagetitle: Roster Builder
     }
     function addUnit(type, role) {
         nameValue = document.getElementById('name').value
-        typeValue = type ?? document.getElementById('type').value
         roleValue = role ?? document.getElementById('role').value
+        processType = (type ?? document.getElementById('type').value).split(' ')
         specialistValue = (type || role) ? null : document.getElementById('specialist').value
-        type = types[typeValue]
+        type = types[processType[0]]
         standCount = type[4][0]
         role = [...roles[roleValue]]
         if (Object.keys(roles).includes(specialistValue)) {
@@ -77,11 +77,10 @@ pagetitle: Roster Builder
                 type[1] * role[2], // Defence
                 Math.ceil(type[2] * role[3]), // Morale
                 type[3] * role[4], // Health
-                `${standCount+type[4][1]}`
             ].join('</td><td>') }</td></tr>
             <tr class="unit-details">
-                <td><em>${roleValue} ${typeValue}<em></td>
-                <td colspan="6">
+                <td><em>${roleValue} ${processType[0]} (${standCount + (type[4][1] ?? processType[1].slice(1,-1))})<em></td>
+                <td colspan="5">
                     <em>${specials.join('</em>, <em>')}</em>
                 </td>
             </tr>`
@@ -99,10 +98,11 @@ pagetitle: Roster Builder
     }
     function randomUnit() {
         typeKeys = [
-            ...new Array(8).fill('Infantry'),
-            ...new Array(4).fill('Cavalry'),
-            ...new Array(2).fill('Behemoths'),
-            ...new Array(1).fill('Beasts'),
+            ...new Array(16).fill('Infantry'),
+            ...new Array(8).fill('Cavalry'),
+            ...new Array(4).fill('Behemoths'),
+            ...new Array(1).fill('Beasts (N)'),
+            ...new Array(1).fill('Beasts (W)'),
         ]
         roleKeys = Object.keys(roles)
         addUnit(
@@ -142,8 +142,9 @@ pagetitle: Roster Builder
     <select id="type">
         <option selected>Infantry</option>
         <option>Cavalry</option>
-        <option>Beasts</option>
         <option>Behemoths</option>
+        <option>Beasts (N)</option>
+        <option>Beasts (W)</option>
     </select>
     <button onclick="addUnit()">&plus; Add Unit</button>
 </fieldset>
@@ -156,15 +157,14 @@ pagetitle: Roster Builder
         <th>Defence</th>
         <th>Morale</th>
         <th>Health</th>
-        <th>Stands</th>
     </tr><thead>
     <tbody id="quick-builder-table-body"></tbody>
     <tfoot><tr>
-        <td colspan="4">
+        <td colspan="3">
             <button onclick="undoLast()">&#08634; Undo</button>
             <button onclick="undoList()">&#08634; Clear All</button>
         </td>
-        <td colspan="4"><button onclick="randomUnit()">+ Random Unit</button></td>
+        <td colspan="3"><button onclick="randomUnit()">+ Random Unit</button></td>
     </tr><tfoot>
 </table>
 </form>
@@ -172,13 +172,13 @@ pagetitle: Roster Builder
 <hr id="special-rules" />
 
 ## Special Rules
-> If a unit ever gains a special rule twice, there is no additional effect.
+> If a unit should gain a special rule twice, there is no additional effect.
 
 #### \[Combat\] Discipline
-This unit bids Health at a 1:2 ratio when raising the indicated combat score (ranged, melee, or defence), improving it by +2 per Health bid. A disordered unit with \[Combat\] Discipline bids Health at 1:1 to improve the \[combat\] score, effectively ignoring both rules.
+This unit bids Health at a 1:2 ratio when raising the indicated combat score (ranged, melee, or defence), improving it by +2 per Health bid. A disordered unit with an applicable Discipline bids Health at 1:1 to improve their combat score, effectively ignoring both.
 
 #### Expendable
-If this unit would be destroyed, it is instead 'removed from play'. At the start of any subsequent round, any _Expendable_ unit removed from play may be deployed to your deployment area in column formation. This is not considered the unit's activation for the round.
+If this unit would be destroyed, it is instead removed from play. At the start of any subsequent round, any _Expendable_ unit removed from play may be deployed to your deployment area in column formation. This is not considered the unit's activation for the round.
 
 #### Fear
 Enemy units count one fewer stands when calculating their close combat score against this unit. A unit with Fear also has the Fearless special rule.
@@ -196,7 +196,7 @@ If this unit performs a Reform, they must skip their Move action, but may still 
 This unit may bid Health during a ranged combat.
 
 #### Rush
-If not disordered, this unit can make an Advance move instead for their Reform action.
+This unit can use their Reform action to make a Rush move.
 
 #### Skirmish
 This unit is immune to disorder. In addition, friendly units do not lose a stand if fled through by a unit with this rule.
@@ -213,7 +213,7 @@ To deploy, before removing the final destroyed stand, place a stand of the Summo
 > If a unit with both _Expendable_ **and** _Summoned_ was removed from play, it may only redeploy in a subsequent turn via summoning.
 
 #### Swift
-This unit may March even if within difficult terrain, and may Reform instead of making an Advance move.
+This unit may perform a March within difficult terrain, and may use the action to Reform instead of moving.
 
 <hr id="types" />
 

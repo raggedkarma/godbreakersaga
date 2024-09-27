@@ -31,7 +31,7 @@ Each round, starting with the first player, players take turns to activate a uni
 #### Scoring
 During play, player's increase their tally for every enemy unit destroyed (or otherwise removed from play):
 - Regular: +1VP
-- Specialist: +3VP
+- Specialist: +3VP (+2VP if [Expendable](/honour-lies/roster-builder.html#special-rules))
 
 At the end of the game, occupied command holdings are worth 5VP. The side with the highest VP total is declared the winner.
 
@@ -42,8 +42,8 @@ Units have the following activation flow, which is a list of actions that must b
 
 1. Ranged Attack
 2. Reform
-3. Move
-4. March
+3. Regular Manoeuvre
+4. March Manoeuvre
 5. Melee
 
 Outside of special rules, a unit is not required to do any particular action, but must perform them in order. For example, a unit cannot shoot or reform after it has moved, unless specifically permitted. Once a unit is activated it becomes the 'active unit' until another unit is activated. A unit may be required to [rebuild the formation](/honour-lies/#formations) during a reform or move, so players should be familiar with this process.
@@ -59,11 +59,11 @@ _If either unit was activated, it could make a Ranged attack against Unit 1. Onl
 ### Reform
 The unit changes its formation from either regular to wall or column, or from wall or column to regular. To reform, select one of the central stands in the front rank from which to rebuild the chosen formation. During a reform, no stand may be placed in front of the current front rank.
 
-### Move
-Moving a unit requires repositioning one of its stands in alignment with the unit, then rebuilding the formation around the placed stand. There are three ways a unit can move: _Advance_, _Retreat_, and _Pivot_. If a Retreat or Pivot move ends with any stand in the active unit in contact with an enemy unit, or overlapping any unit, that stand is destroyed.
+### Regular Manoeuvres
+A unit may choose any one move to perform as a regular manouevre. This requires repositioning one of its stands in alignment with the unit, then rebuilding the formation around the placed stand. There are three ways a unit can move: _Advance_, _Retreat_, and _Pivot_. If a Retreat or Pivot move ends with any stand in the active unit in contact with an enemy unit, or overlapping any unit, that stand is destroyed.
 
 #### Advance
-Reposition a stand from the rear rank in front of the unit, with either corner in contact and the other no more than 30mm forward. If a stand would be placed overlapping or in contact with an enemy stand during an Advance, the unit immediately engages it in melee.
+Reposition a stand from the rear rank in front of the unit, with either corner in contact and the other corners no more than 30mm apart. If a stand would be placed overlapping or in contact with an enemy stand during an Advance, the unit immediately engages it in melee.
 
 ![advance move](/resources/images/honour-lies/advance-move.png)
 
@@ -74,6 +74,9 @@ When a stand engages an enemy, align it to the enemy's facing that is directly a
 An engaging unit may adopt any other formation when rebuilding, but only to prevent making contact with another enemy unit, or causing overlap.
 
 ![advance engage reform](/resources/images/honour-lies/advance-engage-reform.png)
+
+#### Rush
+Reposition a stand from the rear rank in front of the unit, in alignment, then rebuild the formation. Note this means the unit cannot change direction as part of this move.
 
 #### Retreat
 Reposition a stand from the front rank behind the unit, in alignment, then rebuild the formation.
@@ -99,7 +102,7 @@ To make any move a unit with a singe stand, place one a removed stand in full al
 ![single stand move](/resources/images/honour-lies/single-stand-move.png)
 
 ### March
-A unit may not march if disordered, engaged or in difficult terrain. A march is another **Advance** move, as detailed above.
+A unit may perform a march manoeuvre to use an **Advance** move, as detailed above. A unit may not perform a march manoeuvre if disorded, engaged or in difficult terrain.
 
 ### Melee
 An engaged unit must now fight a [melee combat](#combat):
@@ -163,4 +166,4 @@ If a unit is a ranged attacker or defeated in melee, they are **disordered** for
 If the margin of victory is equal to or greater than the Morale value of the defeated unit, one stand from that unit is removed. If the margin of victory is equal to or greater than twice the Morale value of the defeated unit, one additional stand from that unit is removed, to a maximum of two.
 
 #### Retreat
-The defeated unit, if not destroyed, must now make a Retreat move. If they were attacked in the rear, then they must Retreat forward.
+The defeated unit, if not destroyed, must now make a Retreat move. If attacked in the rear, they may Rush instead.
